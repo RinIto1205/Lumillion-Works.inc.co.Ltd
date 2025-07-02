@@ -193,3 +193,109 @@ footer {
   background: #000;
   font-size: 0.9rem;
 }
+
+/* レスポンシブ対応：スマホ表示用 */
+@media (max-width: 768px) {
+  /* 共通：セクションのパディングを調整 */
+  .section {
+    padding: 60px 5%;
+  }
+
+  /* ヒーローセクション：縦並びに */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5% 60px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .hero-glow-image img {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  /* カード系 */
+  .mvv-cards .card,
+  .service-cards .card,
+  .grid-3x2 .card {
+    flex: 0 0 100%;
+    max-width: 90%;
+  }
+
+  /* リーダー画像 */
+  .leaders {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leader img {
+    width: 120px;
+  }
+
+  /* タブ切り替え */
+  .tab-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  /* フォーム */
+  form {
+    width: 90%;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
+
+  /* フッター */
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+}
+
+/* 超小型デバイス（iPhone SEなど）対応 */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-glow-image img {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+  }
+}
