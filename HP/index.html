@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumillion Works</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particles-bg"></canvas>
+  <canvas id="glow-bg"></canvas>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p>合同会社</p>
+      <h1><span class="glossy-text">Lumillion Works</span></h1>
+      <p>あなたの中にある「光」が、世界を変える</p>
+      <div class="hero-buttons">
+        <a href="#mission" class="btn gold">About Us</a>
+        <a href="#contact" class="btn white">Team Contact</a>
+      </div>
+    </div>
+    <div class="hero-glow-image">
+      <img src="./img/BF1CD6A4-1E45-420E-8F49-9903F51D81D8.PNG" alt="光の演出" />
+    </div>
+  </section>
+
+    <!-- ルミリオンへの想い -->
+    <section class="section">
+      <h2>Lumillionへの想い</h2><div class="underline"></div>
+      <div class="service-cards">
+        <div class="card"><img src="./img/kibou.jpg" /><h3>光を宿す希望</h3><p></p></div>
+        <div class="card"><img src="./img/kanousei.jpg" /><h3>無限大の可能性</h3></div>
+        <div class="card"><img src="./img/kati.jpg" /><h3>計り知れない「価値」への挑戦</h3><p></p></div>
+      </div>
+    </section>
+
+  <!-- MVV -->
+  <section id="mission" class="section transparent">
+    <h2>Mission / Vision / Value</h2><div class="underline"></div>
+    <div class="mvv-cards">
+      <div class="card"><img src="./img/Mission.jpg" /><h3>未来を照らす</h3></div>
+      <div class="card"><img src="./img/Vision.jpg" /><h3>信頼と成長</h3></div>
+      <div class="card"><img src="./img/Value.jpg" /><h3>無限の価値</h3></div>
+    </div>
+  </section>
+
+  <!-- サービス -->
+  <section class="section">
+    <h2>提供サービス</h2><div class="underline"></div>
+    <div class="service-cards">
+      <div class="card"><img src="./img/スクリーンショット 2025-06-26 18.12.30.png" /><h3>城落としゲーム</h3></div>
+      <div class="card"><img src="./img/TechLab.jpg" /><h3>ITスクール</h3></div>
+      <div class="card"><img src="./img/Core.jpg" /><h3>AIマッチング</h3></div>
+    </div>
+  </section>
+
+  <!-- 導入実績 -->
+  <section class="section transparent">
+    <h2>導入実績</h2><div class="underline"></div>
+    <div class="grid-3x2">
+      <div class="card"><img src="./img/HP1.jpg" /><h3>株式会社LIP様ホームページ</h3></div>
+      <div class="card"><img src="./img/HP2.jpg" /><h3>株式会社ASTY様ホームページ</h3></div>
+      <div class="card"><img src="./img/System1.jpg" /><h3>社内KPIダッシュボード</h3></div>
+      <div class="card"><img src="./img/system2.jpg" /><h3>事業業務システム</h3></div>
+      <div class="card"><img src="./img/shopee.jpg" /><h3>無在庫物販の自動化ツール</h3></div>
+      <div class="card"><img src="./img/Flower.jpg" /><h3>マッチングプラットフォーム</h3></div>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="section">
+    <h2>COMING SOON</h2><div class="underline"></div>
+    <div class="grid-3x2">
+      <div class="card"><h3>不動産</h3></div>
+      <div class="card"><h3>金融</h3></div>
+      <div class="card"><h3>エンタメ</h3></div>
+      <div class="card"><h3>飲食</h3></div>
+      <div class="card"><h3>Next</h3></div>
+      <div class="card"><h3>新展開</h3></div>
+    </div>
+  </section>
+
+  <!-- ニュース・イベント タブ切り替えブロック -->
+<section class="news-events-section">
+  <h2>お知らせ・イベント</h2><div class="underline"></div>
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showTab('news')">ニュース</button>
+    <button class="tab-btn" onclick="showTab('events')">イベント</button>
+  </div>
+  <div class="tab-content" id="news">
+    <div class="card">
+      <img src="./img/Core.jpg" alt="News1">
+      <h3>新規プロジェクト始動</h3>
+      <p>2025年7月、Lumillionが新しいプロジェクトを開発スタート！</p>
+    </div>
+    <div class="card">
+      <img src="./img/BF1CD6A4-1E45-420E-8F49-9903F51D81D8.PNG" alt="News2">
+      <h3>公式サイト完成</h3>
+      <p>公式ホームページが近未来型デザインで刷新されました。</p>
+    </div>
+  </div>
+  <div class="tab-content" id="events" style="display:none;">
+    <div class="card">
+      <img src="./img/event.jpg" alt="Event1">
+      <h3>【告知】<br>学生イベント開催in東京</h3>
+      <p>2025年7月○日東京新宿にて学生限定交流会を開催します。</p>
+    </div>
+    <div class="card">
+      <img src="./img/IMG_3526.jpeg" alt="Event2">
+      <h3>次世代のキャリア設計セミナー＠オンライン</h3>
+      <p>収入×スキルのトレンドを押さえて、自分の人生を再設計するセミナー実施</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.news-events-section {
+  padding: 60px 20px;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+.tab-buttons {
+  margin-bottom: 20px;
+}
+.tab-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.tab-btn.active {
+  background: #ffd700;
+  color: black;
+}
+.tab-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  background: #111;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+</style>
+
+<script>
+function showTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+  document.getElementById(tab).style.display = 'flex';
+  event.target.classList.add('active');
+}
+</script>
+
+  <!-- 代表メッセージ -->
+  <section class="section transparent">
+    <h2>代表挨拶</h2><div class="underline"></div>
+    <div class="leaders">
+      <div class="leader"><img src="./img/BF1CD6A4-1E45-420E-8F49-9903F51D81D8.PNG" /><p>伊藤　凜(Ito Rin) / 清水響己(Shimizu Hibiki)</p><br><br>
+        <p><strong>「ルミリオンは、あなたの未来を照らす“光”でありたい」</strong><br><br>
+
+          Lumillion（ルミリオン）という名には、私たちのすべての想いが込められています。
+          それは「Luminous（光り輝く）」と「Million/Trillion（巨大な価値）」の融合。
+          ただの企業名ではなく、“希望”と“革新”の象徴として存在したいのです。
+          
+          私たちが目指すのは、目の前の課題を解決するだけの企業ではありません。
+          一人ひとりの可能性を引き出し、次のステージへと導く、社会にインパクトを与える存在です。
+          
+          今、私たちが手がけているのは、Web制作、業務システム、自動化ツール。
+          そして近い将来、不動産、エンタメ、飲食、金融という実社会の根幹にアプローチし、
+          最終的には「企業都市」という新しい社会のモデルを創り出す構想を描いています。
+          
+          ルミリオンの活動の根底にあるのは、「光を宿す未来」への挑戦。
+          誰かが道を照らせば、次の誰かが一歩を踏み出せる。
+          私たちは、そんな“連鎖する光”の起点であり続けたいと願っています。
+          
+          未来は、誰かが待つものではなく、自らの手で創るもの。
+          そして、それを可能にするのは“人”の力です。
+          信頼、誠実、創造力──すべての価値を織り込み、私たちは歩み続けます。
+          
+          ルミリオンは、あなたの光です。
+          ともに、未来を照らしましょう。
+          
+        </p></div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact" class="section contact transparent">
+    <h2>お問い合わせ</h2><div class="underline"></div>
+    <form>
+      <input type="text" placeholder="お名前" required />
+      <input type="email" placeholder="メールアドレス" required />
+      <textarea placeholder="お問い合わせ内容" required></textarea>
+      <button type="submit">送信する</button>
+    </form>
+  </section>
+
+  <footer>&copy; 2025 Lumillion Works. All rights reserved.</footer>
+
+  <script src="particles.js"></script>
+  <script src="glow.js"></script>
+</body>
+</html>

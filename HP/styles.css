@@ -1,0 +1,195 @@
+/* リセットと基本設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'SF Pro', 'Orbitron', 'Rajdhani', sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+canvas#particles-bg,
+canvas#glow-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* セクション共通 */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.section.transparent {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  margin: 40px auto;
+  width: 90%;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #fff, #d4af37, #fff);
+  margin: 10px auto 30px;
+  border-radius: 2px;
+}
+
+/* ヒーロー */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 10%;
+  min-height: 100vh;
+}
+.hero-content {
+  text-align: left;
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+.hero-glow-image img {
+  width: 400px;
+  filter: brightness(140%) drop-shadow(0 0 50px #ffe);
+}
+
+/* ボタン */
+.btn {
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+}
+.btn.gold {
+  background: linear-gradient(135deg, #f9d423, #f2994a);
+  color: #111;
+}
+.btn.white {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* グロッシーテキスト */
+.glossy-text {
+  background: linear-gradient(to right, #fff, #eee 50%, #d4af37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 30px rgba(255,255,255,0.4);
+}
+
+/* カード・グリッド */
+.card {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 10px;
+  transition: 0.3s;
+}
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255,255,255,0.08);
+}
+
+.mvv-cards,
+.service-cards,
+.grid-3x2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.mvv-cards .card,
+.service-cards .card {
+  flex: 0 0 30%;
+}
+.grid-3x2 img, .grid-3x2 .card {
+  flex: 0 0 30%;
+  border-radius: 12px;
+}
+
+/* リーダー */
+.leaders {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.leader img {
+  width: 160px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* フォーム */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+form button {
+  width: 100%;
+  padding: 14px;
+  background: #d4af37;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form button:hover {
+  background: #f9d423;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 0.9rem;
+}
